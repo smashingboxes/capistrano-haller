@@ -6,7 +6,7 @@ Notifies team members by posting to your hall channel when you deploy your code.
 
 Gemfile
 ``` ruby
-  gem 'capistrano-haller', github: 'smashingboxes/capistrano-haller'
+  gem 'capistrano-haller', github: 'smashingboxes/capistrano-haller', branch: 'v0.0.3'
 ```
 
 `bundle install`
@@ -21,6 +21,9 @@ Test
 `cap hall_notify:notify_hall_room`
 
 The `hall_notify:notify_hall_room` will run after `deploy`.
+
+##### Warning
+master is not stable!
 
 ### Contributing and Support
 
