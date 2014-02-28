@@ -11,6 +11,7 @@ class HallNotifier
   class HallApiError < StandardError; end
   ROOT_URI = 'https://hall.com'
   ENDPOINT = '/api/1/services/generic/'
+  THUMB_URL = 'https://raw.github.com/smashingboxes/capistrano-haller/master/resources/capistrano-logo.png'
   
   attr_accessor :room_key
 
@@ -49,7 +50,8 @@ class HallNotifier
 
   def message_json(body)
     { title: "Capistrano Deployment",
-      message: body }.to_json
+      message: body,
+      picture: 'http://roots.io/media/logo-capistrano.png'}.to_json
   end
 end
 
