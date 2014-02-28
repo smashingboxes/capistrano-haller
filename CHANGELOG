@@ -5,3 +5,7 @@
 0.0.2
 
 - Added thumbnail to messages
+
+0.0.3
+
+- Fail softly on network errors so the rest of the deploy process isn't stopped
