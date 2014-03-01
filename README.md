@@ -6,7 +6,7 @@ Notifies team members by posting to your hall channel when you deploy your code.
 
 Gemfile
 ``` ruby
-  gem 'capistrano-haller', github: 'smashingboxes/capistrano-haller', branch: 'v0.0.3'
+  gem 'capistrano-haller', github: 'smashingboxes/capistrano-haller', branch: 'v0.0.3', require: false
 ```
 
 `bundle install`
