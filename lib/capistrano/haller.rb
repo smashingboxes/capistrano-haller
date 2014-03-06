@@ -20,8 +20,7 @@ configuration.load do
         begin
           Haller.new(hall_room_key,
             sender_icon_url: Haller::CAPISTRANO_THUMB_URL,
-            ).send_message(
-            "Branch #{branch} was deployed to #{rails_env}.")
+            ).send_message( exists?(:hall_message) ? hall_message : "Branch #{branch} was deployed to #{rails_env}.")
         rescue Haller::HallApiError => e
           logger.important("Could not contact hall API for deployment notification.")
         end
