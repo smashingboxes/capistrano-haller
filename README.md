@@ -15,7 +15,7 @@ deploy.rb
 ``` ruby
   require 'capistrano/haller'
   set :hall_room_key, 'xxx'
-  set :hall_message, "Branch #{branch} was deployed to #{rails_env}."
+  set :hall_message, "Branch #{branch} was deployed to #{rails_env}." #optional
 ```
 
 Test
