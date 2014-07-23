@@ -23,8 +23,6 @@ Test
 
 The `hall_notify:notify_hall_room` will run after `deploy`.
 
-##### Warning
-master is not stable!
 
 ### Contributing and Support
 
